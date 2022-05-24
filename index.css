@@ -1,0 +1,47 @@
+body {
+	background: #7afaff;
+}
+p {
+	font-size: 35px;
+}
+.box {
+	background: salmon;
+	width: 270px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 130px;
+	padding-top: 20px;
+	padding-left: 30px;
+	border-radius: 20px;
+	z-index: 3;
+}
+.sphere {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: all 0.5s linear;
+	top: 1100px;
+	background-size: 100% 100%;
+	animation: abc 0.15s ease-in-out infinite alternate;
+}
+
+@keyframes abc{
+	from{background-image: url(1.svg);}
+	50%{background-image: url(3.svg);}
+	to{background-image: url(2.svg);}
+}
+
+.ground {
+	background-image: url(ground.svg);
+	background-size: 100% 100%;
+	position: absolute;
+	width: 2000px;
+	height: 300px;
+	top:  700px;
+	left: 0px;
+	padding: 0px;
+	z-index: 2;
+}
+	
